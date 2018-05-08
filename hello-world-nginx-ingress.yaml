@@ -3,10 +3,6 @@ kind: Ingress
 metadata:
   name: hello-world-nginx-ingress
 spec:
-        rules:
-                - http:
-                        paths:
-                                - path: /
-                                  backend:
-                                          serviceName: hello-world-nginx
-                                          servicePort: 80
+  backend:
+    serviceName: hello-world-nginx
+    servicePort: 80
