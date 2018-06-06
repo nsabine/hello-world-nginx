@@ -2,7 +2,7 @@ apiVersion: skaffold/v1alpha2
 kind: Config
 build:
   artifacts:
-  - imageName: gcr.io/gcp-demo-200100/hello-world-nginx:latest
+  - imageName: gcr.io/gcp-demo-200100/hello-world-nginx
   kaniko:
     gcsBucket: skaffold-kaniko-contexts
     pullSecret: /Users/tariqislam/opt/sa/kaniko-sa.json

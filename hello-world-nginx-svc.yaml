@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name:  hello-world-nginx-svc
+spec:
+  selector:
+    app:  hello-world-nginx
+  type:  NodePort
+  ports:
+  - protocol:  TCP
+    port:  80
+    targetPort:  80

@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: hello-world-nginx-deployment
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: hello-world-nginx
+    spec:
+      containers:
+      - name: hello-world-nginx
+        image: gcr.io/gcp-demo-200100/hello-world-nginx:latest

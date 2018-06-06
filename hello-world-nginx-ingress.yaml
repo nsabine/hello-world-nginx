@@ -4,5 +4,5 @@ metadata:
   name: hello-world-nginx-ingress
 spec:
   backend:
-    serviceName: hello-world-nginx
+    serviceName: hello-world-nginx-svc
     servicePort: 80
