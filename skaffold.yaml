@@ -1,5 +1,4 @@
-
-apiVersion: skaffold/v1alpha2
+apiVersion: skaffold/v1alpha3
 kind: Config
 build:
   artifacts:
@@ -9,4 +8,4 @@ build:
 deploy:
   kubectl:
     manifests:
-      - hello-world-nginx*
+    - hello-world-nginx*
