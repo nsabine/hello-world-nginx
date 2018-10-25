@@ -1,8 +1,8 @@
-apiVersion: skaffold/v1alpha3
+apiVersion: skaffold/v1alpha4
 kind: Config
 build:
   artifacts:
-  - imageName: gcr.io/gcp-demo-200100/hello-world-nginx
+  - image: gcr.io/gcp-demo-200100/hello-world-nginx
   googleCloudBuild:
     projectId: gcp-demo-200100
 deploy:
