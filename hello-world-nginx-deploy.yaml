@@ -11,4 +11,4 @@ spec:
     spec:
       containers:
       - name: hello-world-nginx
-        image: gcr.io/cloud-tools-201201/hello-world-nginx:latest
+        image: gcr.io/<your project id>/hello-world-nginx:latest
