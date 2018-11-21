@@ -1,13 +1,12 @@
 steps:
 - name: gcr.io/kaniko-project/executor:latest
   args: ["--dockerfile=./Dockerfile",
-         "--context=dir://",
-         "--destination=gcr.io/gcp-demo-200100/hello-world-nginx:latest"]
+         "--destination=gcr.io/<your project name>/hello-world-nginx:latest"]
 - name: 'gcr.io/cloud-builders/kubectl'
-  args: ['set', 'image', 'deployment/hello-world-nginx-deployment', 'hello-world-nginx=gcr.io/gcp-demo-200100/hello-world-nginx:latest', '-n', 'helloworldnginx']
+  args: ['set', 'image', 'deployment/hello-world-nginx-deployment', 'hello-world-nginx=gcr.io/<your project name>/hello-world-nginx:latest', '-n', 'default']
   env:
-  - 'CLOUDSDK_COMPUTE_ZONE=us-central1-a'
-  - 'CLOUDSDK_CONTAINER_CLUSTER=cluster1'
+  - 'CLOUDSDK_COMPUTE_ZONE=<the zone your cluster resides in>'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=<your cluster name>'
 timeout: 660s
 tags: ['latest']
-images: ['gcr.io/gcp-demo-200100/hello-world-nginx:latest']
+images: ['gcr.io/<your project name>/hello-world-nginx:latest']
