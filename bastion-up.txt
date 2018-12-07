@@ -1,7 +1,0 @@
-gcloud auth login --no-launch-browser
-
-sudo yum install -y git docker kubectl
-
-DEVSHELL_PROJECT_ID=$(gcloud config get-value project)
-
-sudo systemctl start docker
