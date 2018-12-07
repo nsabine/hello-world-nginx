@@ -1,8 +1,0 @@
-apiVersion: extensions/v1beta1
-kind: Ingress
-metadata:
-  name: hello-world-nginx-ingress
-spec:
-  backend:
-    serviceName: hello-world-nginx-svc
-    servicePort: 80
