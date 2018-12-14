@@ -7,6 +7,4 @@ steps:
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=us-central1-a'
   - 'CLOUDSDK_CONTAINER_CLUSTER=cluster3'
-timeout: 660s
-tags: ['latest']
-images: ['gcr.io/gcp-demo-200100/hello-world-nginx:latest']
+
