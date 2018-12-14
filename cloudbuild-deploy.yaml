@@ -7,6 +7,3 @@ steps:
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=<THE ZONE YOUR CLUSTER RESIDES IN>'
   - 'CLOUDSDK_CONTAINER_CLUSTER=<YOUR CLUSTER NAME>'
-timeout: 660s
-tags: ['latest']
-images: ['gcr.io/<YOUR PROJECT NAME>/hello-world-nginx:latest']
