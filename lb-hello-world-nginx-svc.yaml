@@ -1,13 +1,12 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name:  hello-world-nginx-svc
+  name:  hello-world-nginx-svc_lb
 spec:
   selector:
     app:  hello-world-nginx
-  type:  NodePort
+  type:  LoadBalancer
   ports:
   - protocol:  TCP
     port:  80
     targetPort:  80
-    nodePort: 30061
