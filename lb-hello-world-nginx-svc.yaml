@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name:  hello-world-nginx-svc_lb
+  name:  hello-world-nginx-svc-lb
 spec:
   selector:
     app:  hello-world-nginx

@@ -1,4 +1,4 @@
-apiVersion: skaffold/v1beta1
+apiVersion: skaffold/v1beta2
 kind: Config
 build:
   artifacts:
@@ -8,4 +8,4 @@ build:
 deploy:
   kubectl:
     manifests:
-    - hello-world-nginx*
+    - https://raw.githubusercontent.com/tariq-islam/hello-world-nginx/master/hello-world-nginx-deploy.yaml

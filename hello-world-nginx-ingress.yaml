@@ -2,6 +2,9 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: hello-world-nginx-ingress
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: mci-ip
+    kubernetes.io/ingress.class: gce-multi-cluster
 spec:
   backend:
     serviceName: hello-world-nginx-svc
